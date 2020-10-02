@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script type="text/javascript" src="./sample.js"></script>
+    <link rel="stylesheet" href="sample.css">
+  </head>
+  <body>
+    <form>
+      <!-- input -->
+      <div class="input">
+        <label for="free">【氏名】</label>
+        <input type="text" name="free" value="">
+        <br><br>
+
+        <label for="gender">【性別】</label>
+        <input type="radio" name="gender" id="male" value="1">
+        <label for="male">男性</label>
+        <input type="radio" name="gender" id="female" value="2">
+        <label for="female">女性</label>
+        <br><br>
+
+        <label for="nation">【国籍】</label>
+        <select name="nation">
+          <option value="" selected></option>
+          <option value="1">日本</option>
+          <option value="2">アメリカ</option>
+          <option value="3">ロシア</option>
+          <option value="4">なんか</option>
+        </select>
+        <br><br>
+
+        <label for="lang">【言語】</label>
+        <input type="checkbox" name="lang" id="lang1" value="1">
+        <label for="lang1">C#</label>
+        <input type="checkbox" name="lang" id="lang2" value="2">
+        <label for="lang2">.NET</label>
+        <input type="checkbox" name="lang" id="lang3" value="3">
+        <label for="lang3">PHP</label>
+        <input type="checkbox" name="lang" id="lang4" value="4">
+        <label for="lang4">Java</label>
+      </div>
+      <br>
+
+      <!-- table -->
+      <div class="output">
+        <table border="1">
+          <th width="100px" align="left">社員番号</th>
+          <th width="100px" align="left">氏名</th>
+          <th width="100px" align="left">性別</th>
+          <th width="100px" align="left">所属</th>
+          <th width="100px" align="left">備考</th>
+          <th width="80px"  align="left">チェック</th>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="checkbox" name="data" value=""></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="checkbox" name="data" value=""></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="checkbox" name="data" value=""></td>
+          </tr>
+          <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td><input type="checkbox" name="data" value=""></td>
+          </tr>
+        </table>
+        <br>
+
+        <!-- button -->
+        <div class="buttons">
+          <button type="button" name="button" onclick="enableCheck()">すべて選択</button>
+          <button type="button" name="button" onclick="disableCheck()">すべて選択解除</button>
+        </div>
+      </div>
+    </form>
+  </body>
+</html>
